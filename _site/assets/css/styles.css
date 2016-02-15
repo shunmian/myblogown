@@ -1,14 +1,13 @@
-hr{
-    width:30%;
-    height: 10px;
+.hr-short {
+    width: 40%;
 }
 
 
-*{
-    color: red;
+.hr-middle {
+    width: 70%;
 }
 
-#colortest{
-    color: red;
-    background-color: red;
+.sidebar-margin {
+    margin-top: 100px;;
+
 }
