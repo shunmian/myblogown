@@ -2,12 +2,48 @@
 
 <header class="sidebar-header" role="banner">
     <a href="{{site.baseurl}}/">
-        <img src = "http:www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="image-circle" />
+        <img src = "http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="image-circle" />
     </a>
     <h3 class="title">
         <a href="{{site.baseurl}}/">{{site.title}}</a>
+        <p id="colortest"> color testing</p>
     </h3>
 </header>
+
+<hr class="hr-short"/>
+{% if site.author.bio%}
+<div id = "bio" class=" text-center">
+    {{site.author.bio}}
+</div>
+
+<div id = "contact-list" class="text-center">
+    <ul class="list-unstyled list-inline">
+        <li>
+            {% if site.author.email %}
+            <a class="btn btn-default btn-md" href="mailto:{{site.author.email}}"><i class="fa fa-envelope fa-lg"></i></a>
+            {% endif %}
+        </li>
+
+        <li>
+            {% if site.author.github %}
+            <a class="btn btn-default btn-md" href="https://github.com/{{site.author.github}}"><i class="fa fa-github fa-lg"></i></a>
+            {% endif %}
+        </li>
+
+        <li>
+            {% if site.author.twitter %}
+            <a class="btn btn-default btn-md" href="https://github.com/{{site.author.github}}"><i class="fa fa-twitter fa-lg"></i></a>
+            {% endif %}
+        </li>
+
+
+</div>
+
+
+
+
+{% endif%}
+
 
 
 

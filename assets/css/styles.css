@@ -1,0 +1,14 @@
+hr{
+    width:30%;
+    height: 10px;
+}
+
+
+*{
+    color: red;
+}
+
+#colortest{
+    color: red;
+    background-color: red;
+}
