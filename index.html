@@ -32,7 +32,10 @@ title: Blog
 
 <br />
     <span class="post-date">
-        {{post.date | date: "%Y-%m-%d"}}
+        {{post.date | date: "%Y-%m-%d"}} •
+    </span>
+
+    <span class="post-category">
         {{post.categories[0]}}
     </span>
     <span><a href = "{{post.url}}"><button type="button" class="btn btn-primary">阅读更多...</button></a></span>
