@@ -1,13 +1,49 @@
+/*sidebar------------------------------------*/
 .hr-short {
     width: 40%;
 }
-
 
 .hr-middle {
     width: 70%;
 }
 
-.sidebar-margin {
-    margin-top: 100px;;
+.sidebar {
+    position: fixed;
+    top:  0px;
+    padding-top: 10%;
+    background-color: #1E5263;
+    color:#fff;
+}
+
+.sidebar-header .title {
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.sidebar-header .title a{
+    color: #fff;
+}
+
+/*post------------------------------------*/
+.post-title {
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #686C6E;
+}
+
+.post-shortinfo {
+    color: #858585
+
+}
+
+.post-date{
+    font-szie: 12px;
+    letter-spacing: 1px;
+    color: #BAC0C2;
+}
+
+.post-category {
+
 
 }

@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 ---
-<!-->
+
 <div class="page-header">
     <h1 class="h1-blog">{{page.title}}{% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
@@ -16,7 +16,28 @@ title: Blog
         <br />
         <br />
     </span>
+    <div class="post-shortinfo">
+        {% if post.fullview==true %}
+        {{ post.content}}
+        {% else %}
+        {% if post.shorinfo %}
+        {{ post.shortinfo}}
+        {% elsif post.description %}
+        {{ post.description}}
+        {% else %}
+        {{ post.excerpt}}
+        {% endif %}
+        {% endif %}
+    </div>
 
+<br />
+    <span class="post-date">
+        {{post.date | date: "%Y-%m-%d"}}
+        {{post.categories[0]}}
+    </span>
+    <span><a href = "{{post.url}}"><button type="button" class="btn btn-primary">阅读更多...</button></a></span>
+    <hr />
+    <br />
 </artical>
 {% endfor %}
 
@@ -25,4 +46,3 @@ title: Blog
     <p> &copy: 2015 {{site.author.name}} with jekyll. Theme: <a href="https://github.com/dbtek/dbyll"dbyll</a> by dbtek.
     </p>
 </footer>
--->
